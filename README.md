@@ -45,7 +45,7 @@ project/
 1. Склонируй проект:
 
 ```bash
-git clone https://github.com/your-username/product-page.git
+git clone https://github.com/dias-frontend/product-page.git
 
 2. Открой файл:
 
