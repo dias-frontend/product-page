@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+
+<header>
+  <h1>Our Products</h1>
+
+  <div class="controls">
+    <input type="text" id="search" placeholder="Поиск...">
+
+    <select id="category">
+      <option value="all">Все категории</option>
+      <option value="phone">Телефоны</option>
+      <option value="audio">Аудио</option>
+      <option value="screen">Мониторы</option>
+      <option value="accessory">Аксессуары</option>
+    </select>
+
+    <select id="price">
+      <option value="all">Любая цена</option>
+      <option value="low">До 300$</option>
+      <option value="high">300$+</option>
+    </select>
+  </div>
+
+  <div class="cart-icon" id="cart-open">
+    🛒 <span id="cart-count">0</span>
+  </div>
+
+  <div class="user-panel">
+  <span id="user-email"></span>
+  <span id="balance"></span>
+  <button id="logout" class="logout-btn">Logout</button>
+</div>
+
+</header>
+
+<div class="products" id="products"></div>
+
+<div class="cart-panel" id="cart-panel">
+  <span class="cart-close" id="cart-close">✖</span>
+  <h2>Корзина</h2>
+
+  <ul id="cart"></ul>
+
+  <button id="clear-cart">Очистить корзину</button>
+
+  <h3 id="total">Сумма: 0$</h3>
+</div>
+
+<div class="overlay" id="overlay"></div>
+
+<div id="toast" class="toast">Товар добавлен</div>
+<div id="loader" class="loader">Загрузка...</div>
+
+<script src="/js/product.js"></script>
+</body>
+</html>
